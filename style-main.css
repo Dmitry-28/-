@@ -1,0 +1,292 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+} 
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.body{
+    background-image: url('bckg.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.body_present{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.present2{
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.present{
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    animation: scaleAnimation 3s ease-in-out infinite;
+}
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.present:hover{
+    cursor: pointer;
+}
+.present_top{
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.present_top2{
+    display: flex;
+    justify-content: center;
+    width: 0%;
+    height: 0%;
+    position: relative;
+}
+.present_bottom{
+    border: 5px solid black;
+    border-top: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    width: 95%;
+    height: 70%;
+}
+.present_bottom2{
+    border-top: 0px;
+    display: flex;
+    justify-content: center;
+    width: 0%;
+    height: 0%;
+}
+.ribbon_top{
+    border: 5px solid black;
+    display: inline-block;
+    width: 30%;
+    height: 115%;
+    position: absolute;
+    top: -15%;
+    background-color: yellow;
+}
+.ribbon_top2{
+    display: inline-block;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: -15%;
+}
+.ribbon_bottom{
+    border: 5px solid black;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    background-color: yellow;
+}
+.ribbon_bottom2{
+    display: inline-block;
+    width: 0%;
+    height: 0%;
+}
+.click_me_div{
+    display: flex;
+    justify-content: center;
+}
+.click_me{
+    width: 90%;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    animation: click_me_text 3s ease infinite;
+}
+
+@keyframes click_me_text {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.present_text{
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+    text-align: center;
+    padding: 5%;
+}
+
+.light_effect{
+    display: inline-block;
+    position: absolute;
+    animation: light_effect_animation 0.5s ease-in-out;
+    border-radius: 60px;
+}
+.light_effect2{
+    display: inline-block;
+    position: absolute;
+    background-color: aliceblue;
+    width: 100%;
+    height: 105.4%;
+    animation: light_effect_animation2 2.5s ease-in-out;
+    padding-bottom: 80px;
+}
+
+@keyframes light_effect_animation {
+    0%{
+        background-color: rgba(255, 255, 255, 0.358);
+        width: 5%;
+        height: 5%;
+       
+    }
+    10%{
+        background-color: rgba(255, 255, 255, 0.425);
+        width: 10%;
+        height: 10%;
+    }
+    20%{
+        background-color: rgba(255, 255, 255, 0.555);
+        width: 20%;
+        height: 20%;
+    }
+    30%{
+        background-color: rgba(255, 255, 255, 0.639);
+        width: 30%;
+        height: 30%;
+    }
+    40%{
+        background-color: rgba(255, 255, 255, 0.737);
+        width: 40%;
+        height: 40%;
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0.774);
+        width: 50%;
+        height: 50%;
+    }
+    60%{
+        background-color: rgba(255, 255, 255, 0.856);
+        width: 60%;
+        height: 60%;
+    }
+    70%{
+        background-color: rgba(255, 255, 255, 0.911);
+        width: 70%;
+        height: 70%;
+    }
+    80%{
+        background-color: rgba(255, 255, 255, 0.947);
+        width: 80%;
+        height: 80%;
+    }
+    90%{
+        background-color: rgba(255, 255, 255, 0.984);
+        width: 90%;
+        height: 90%;
+    }
+    100%{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 105.4%;
+    }
+}
+
+@keyframes light_effect_animation2 {
+   0% {
+    background-color: rgb(255, 255, 255);
+}
+10% {
+    background-color: rgba(255, 255, 255, 0.984);
+}
+20% {
+    background-color: rgba(255, 255, 255, 0.947);
+}
+30% {
+    background-color: rgba(255, 255, 255, 0.911);
+}
+40% {
+    background-color: rgba(255, 255, 255, 0.856);
+}
+50% {
+    background-color: rgba(255, 255, 255, 0.774);
+}
+60% {
+    background-color: rgba(255, 255, 255, 0.737);
+}
+70% {
+    background-color: rgba(255, 255, 255, 0.639);
+}
+80% {
+    background-color: rgba(255, 255, 255, 0.386);
+}
+90% {
+    background-color: rgba(255, 255, 255, 0.247);
+}
+100% {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+}
+
+.emoji_class{
+    font-size: 700%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    left: 45%;
+    animation: scaleAnimation2 3s ease-in-out infinite;
+}
+
+@keyframes scaleAnimation2 {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.20); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
